@@ -1,0 +1,4 @@
+#include "Resource.h"
+#include <windows.h>
+
+IDR_MAINFRAME ICON "app.ico"
