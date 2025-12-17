@@ -55,6 +55,8 @@ ComplianceResult AntivirusCheck::performCheck() {
                                 
                                 antivirusFound = true;
                                 
+                                // Initialize vtProp before use
+                                VariantInit(&vtProp);
                                 // Get product name
                                 hres = pclsObj->Get(L"displayName", 0, &vtProp, 0, 0);
                                 if (SUCCEEDED(hres) && vtProp.vt == VT_BSTR) {
